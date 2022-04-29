@@ -24,21 +24,31 @@ const Services = () => {
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
-        <span style={{ color: darkMode ? "white" : "" }}>My Awesome</span>
-        <span>services</span>
-        <spane>
-          Lorem ispum is simpley dummy text of printing of printing Lorem
-          <br />
-          ispum is simpley dummy text of printing
-        </spane>
+        <span style={{ color: darkMode ? "white" : "" }}>About</span>
+        <span>Me</span>
+        <span>
+        Motivated and efficient Full-stack web developer with a history of education in BBA 
+        <br/>
+        and an interest in coding. Working with MERN stack and programming languages like JavaScript 
+        <br/>
+        catalyzed my curiosity for web development. I have worked in collaborative environments 
+        <br/>
+        demonstrating my coding and interpersonal skills to meet deadlines. 
+        <br/>
+        Looking forward for some interesting and challenging opportunities.
+         
+        </span>
+       
         <a href={Resume} download>
           <button className="button s-button">Download CV</button>
         </a>
         <div className="blur s-blur1" style={{ background: "#ABF1FF94" }}></div>
       </div>
       {/* right */}
+    
       <div className="cards">
         {/* first card */}
+        
         <motion.div
           initial={{ left: "25rem" }}
           whileInView={{ left: "14rem" }}
@@ -46,8 +56,9 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={"Design"}
-            detail={"Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"}
+            heading={"Full Stack Web Development"}
+            detail={"Masai School"}
+            time={"November 2021 - June 2022"}
           />
         </motion.div>
         {/* second card */}
@@ -58,8 +69,9 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={"Developer"}
-            detail={"Html, Css, JavaScript, React, Nodejs, Express"}
+            heading={"Bachelor of Business Administration"}
+            detail={"Deenbandhu Chhotu Ram University of Science and Technology"}
+            time={"April 2018 - July 2021"}
           />
         </motion.div>
         {/* 3rd */}
@@ -70,13 +82,16 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={"UI/UX"}
+            heading={"Personal Info"}
             detail={
-              "Lorem ispum dummy text are usually use in section where we need some random text"
+              "sunilbiswal01092001@gmail.com"
             }
+            time={"+91-8569809194"}
+            location = {"Sonipat. Haryana "}
             color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
+        
         <div
           className="blur s-blur2"
           style={{ background: "var(--purple)" }}

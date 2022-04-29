@@ -1,13 +1,14 @@
 import React, { useContext } from "react";
 import "./Works.css";
-import Upwork from "../../img/Upwork.png";
-import Fiverr from "../../img/fiverr.png";
-import Amazon from "../../img/amazon.png";
-import Shopify from "../../img/Shopify.png";
-import Facebook from "../../img/Facebook.png";
+import next from "../../img/next.png";
+import express from "../../img/express.png";
+import mongo from "../../img/mongo.png";
+import react from "../../img/react.png";
+import node from "../../img/node.png";
 import { themeContext } from "../../Context";
 import { motion } from "framer-motion";
-import {Link} from 'react-scroll'
+import {Link} from 'react-scroll';
+import Experience from "../Experience/Experience";
 const Works = () => {
   // context
   const theme = useContext(themeContext);
@@ -15,28 +16,34 @@ const Works = () => {
 
   // transition
   return (
+    <>
     <div className="works" id="works">
       {/* left side */}
       <div className="w-left">
         <div className="awesome">
           {/* dark Mode */}
           <span style={{ color: darkMode ? "white" : "" }}>
-            Works for All these
+          Skilled at operating with
           </span>
-          <span>Brands & Clients</span>
-          <spane>
-            Lorem ispum is simpley dummy text of printing of printing Lorem
+          <span>range of Tech Stack</span>
+          <span>
+          Knowledge of developing Restful web services with Express and NodeJS.
             <br />
-            ispum is simpley dummy text of printingLorem ispum is simpley dummy
-            text
+            Deep understanding with advanced Javascript concepts, such as Prototype, Closure and Promise.
             <br />
-            y dummy text of printingLorem
+            Strong knowledge of MongoDB as well as SQL server
+            <br/>
+             and write SQL queries, stored procedures and data base normalizations.
             <br />
-            ispum is simpley dummy text of printing
-          </spane>
+            Team player with excellent communication, Trouble shooting, Debugging and 
+            <br/>
+            Strong analytical problem solving skills to deliver Technology products and consulting solutions.
+          </span>
+         
           <Link to="contact" smooth={true} spy={true}>
             <button className="button s-button">Hire Me</button>
           </Link>
+          
           <div
             className="blur s-blur1"
             style={{ background: "#ABF1FF94" }}
@@ -54,26 +61,30 @@ const Works = () => {
           className="w-mainCircle"
         >
           <div className="w-secCircle">
-            <img src={Upwork} alt="" />
+            <img src={node} alt=""  style={{height:"150px", borderRadius : "50%"}}/>
           </div>
           <div className="w-secCircle">
-            <img src={Fiverr} alt="" />
+            <img src={express} alt="" style={{height:"150px",borderRadius : "50%"}}/>
           </div>
           <div className="w-secCircle">
-            <img src={Amazon} alt="" />
+            <img src={react} alt=""  style={{height:"150px",borderRadius : "50%"}}/>
           </div>{" "}
           <div className="w-secCircle">
-            <img src={Shopify} alt="" />
+            <img src={mongo} alt=""  style={{height:"150px", width:"150px", borderRadius : "50%"}} />
           </div>
           <div className="w-secCircle">
-            <img src={Facebook} alt="" />
+            <img src={next} alt=""  style={{height:"150px",borderRadius : "50%"}}/>
           </div>
+          
+          
         </motion.div>
         {/* background Circles */}
         <div className="w-backCircle blueCircle"></div>
         <div className="w-backCircle yellowCircle"></div>
-      </div>
+      </div> 
     </div>
+    <Experience/>
+    </>
   );
 };
 

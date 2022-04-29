@@ -2,10 +2,12 @@ import React, { useContext } from "react";
 import "./Portfolio.css";
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css";
-import Sidebar from "../../img/sidebar.png";
-import Ecommerce from "../../img/ecommerce.png";
-import HOC from "../../img/hoc.png";
-import MusicApp from "../../img/musicapp.png";
+import news from "../../img/news.png";
+import myntra from "../../img/myntra.png";
+import bewakoof from "../../img/bewakoof.png";
+import Youtube from "../../img/youtube.png";
+import icoder from "../../img/icoder.png";
+import food from "../../img/food.png";
 import { themeContext } from "../../Context";
 const Portfolio = () => {
   const theme = useContext(themeContext);
@@ -24,16 +26,22 @@ const Portfolio = () => {
         className="portfolio-slider"
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <a href="https://astonishing-stardust-e63665.netlify.app/" rel="noreferrer" target={"_blank"}><img src={Youtube} alt="" style={{height: "200px"}}/></a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <a href="https://sk-myntra.netlify.app/" rel="noreferrer" target={"_blank"}><img src={myntra} alt="" style={{height: "200px"}}/></a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <a href="https://sleepy-neumann-26057b.netlify.app/" rel="noreferrer" target={"_blank"}><img src={food} alt="" style={{height: "200px"}}/></a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+          <a href="https://zealous-brattain-f33b87.netlify.app/" rel="noreferrer" target={"_blank"}><img src={icoder} alt="" style={{height: "200px"}}/></a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href="https://copybewakoof.netlify.app/" rel="noreferrer" target={"_blank"}><img src={bewakoof} alt="" style={{height: "200px"}}/></a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a href=""><img src={news} alt="" style={{height: "200px"}}/></a>
         </SwiperSlide>
       </Swiper>
     </div>

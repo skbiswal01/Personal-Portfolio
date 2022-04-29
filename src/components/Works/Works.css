@@ -134,3 +134,30 @@
   }
 
 }
+
+@media screen and (max-width: 880px) {
+  .works {
+    flex-direction: column;
+    height: 55rem;
+    padding: 0;
+    gap: 5rem;
+  }
+
+  .w-right {
+    display: flex;
+    align-items: flex-start;
+    justify-content:start;
+    transform: scale(0.7);
+  }
+  .w-mainCircle{
+    position: static;
+    width: 18rem;
+    height: 18rem;
+  }
+  .w-backCircle{
+    left: 8rem!important;
+  }
+
+  
+}
+

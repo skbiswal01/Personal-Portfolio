@@ -12,16 +12,16 @@ const Contact = () => {
 
     emailjs
       .sendForm(
-        "service_2mu5xtl",
-        "template_m5udu2c",
+        "service_3o6830m",
+        "template_hftty8h",
         form.current,
-        "VLwg1ltOWvnCYAiK_"
+       "T8gW1AQn6kayJKV8F"
       )
       .then(
         (result) => {
           console.log(result.text);
           setDone(true);
-          form.reset();
+          e.target.reset();
         },
         (error) => {
           console.log(error.text);

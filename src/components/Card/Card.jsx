@@ -1,13 +1,14 @@
 import React from "react";
 import "./Card.css";
 
-const Card = ({emoji, heading, detail, color}) => {
+const Card = ({emoji, heading, detail,time,location, color}) => {
   return (
     <div className="card" style={{borderColor: {color}}}> 
       <img src={emoji} alt="" />
       <span>{heading}</span>
-      <span>{detail}</span>
-      <button className="c-button">LEARN MORE</button>
+      <span style={{color :"var(--gray)", fontSize:"16px"}}>{detail}</span>
+      <span style={{color : "var(--gray)", fontSize:"16px"}}>{time}</span>
+      <span style={{color : "var(--gray)", fontSize:"16px"}}>{location}</span>
     </div>
   );
 };

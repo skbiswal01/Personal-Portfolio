@@ -1,9 +1,11 @@
 .n-wrapper {
   height: 10vh;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   margin-bottom: 2rem;
-  top: 0;
+  overflow: hidden;
+  top : 0;
+  
 }
 .n-left {
   flex: 1;
